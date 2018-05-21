@@ -1,0 +1,231 @@
+.percentage{
+  text-align: center;
+  font-size: 40px;
+}
+
+.progress-bar{
+  height: 20px;
+  width: 254px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  margin:  50px auto ;
+  padding: 3px;
+}
+
+
+
+.progress{
+  height: 16px;
+  width: 0px;
+  border-radius: 12px;
+  margin: 2px;
+  background-color: lightblue;
+}
+
+.btn-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.animate-ctn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animate{
+
+  height: 20px;
+  width: 400px;
+  margin-top: 80px;
+  background-color: lightgray;
+
+  /*animation property shorthand replaces the eight sub-properties*/
+  /*animation: pulse 2s infinite;*/
+
+
+  /*here is the above written out longhand:*/
+  /*animation-name: pewpew;*/
+  animation-duration: 8s;
+  animation-iteration-count:infinite;
+
+  animation-timing-function: linear;
+}
+
+@keyframes pewpew{
+  /*from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }*/
+
+  0%{
+    transform: rotate(0deg);
+    background-color: lightgray;
+    border-radius: 100%;
+  }
+
+  100%{
+    transform: rotate(360deg);
+    background-color: red;
+  }
+}
+
+
+.text-ctn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.text-animate{
+  animation-name: mov;
+  animation-duration: 2s;
+}
+
+@keyframes mov{
+  0%{
+    color: gray;
+    display:none;
+
+  }
+
+  100%{
+    color:red;
+    margin-top: 60px;
+    display:none;
+
+  }
+}*/
+
+img{
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+.carousel-ctn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 520px;
+  height: 220px;
+  /*overflow: hidden;*/
+}
+
+.dialpad{
+  height:110px;
+  width: 110px;
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+
+}
+
+.num{
+  margin:-1px;
+  margin-left: -3px;
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+}
+.number{
+  margin: 0 auto;
+}
+
+.popup-ctn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.popup{
+  height: 200px;
+  background-color: #f2f2f2;
+  width: 200px;
+  position: absolute;
+  top: -400px;
+  transition: top 1s;
+  transition-timing-function: ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav{
+  top: 0;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 7px ;
+  /*border: 1px solid black;*/
+
+}
+
+.nav-right{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.nav-left{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.nav-item{
+  position: static;
+  padding: 20px;
+  margin-top: -15px;
+
+}
+
+.nav-item:hover{
+  border-top: 1px solid black;
+  cursor:pointer;
+overflow: auto;
+}
+
+.menu{
+  top: 56px;
+  height: 70px;
+  width: 100%;
+  border: 1px solid black;
+  display:none;
+  position: fixed;
+  margin: 0 auto;
+}
+
+.dragzone{
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  float:left;
+}
+
+.dropzone{
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  float: right;
+
+
+}
+
+.drag-element{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
